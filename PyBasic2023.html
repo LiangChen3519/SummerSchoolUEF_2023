@@ -530,7 +530,7 @@
 <p>How about we remove the <em>indentation</em> of above code:</p>
 <p><br></p>
 <div class="fragment fade-in">
-<div id="480e5952" class="cell" data-execution_count="1">
+<div id="3d4f3887" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="cf">if</span> <span class="dv">5</span> <span class="op">&gt;</span> <span class="dv">2</span>:</span>
 <span id="cb7-2"><a href="#cb7-2"></a><span class="bu">print</span>(<span class="st">"Five is greater than two!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
@@ -612,7 +612,7 @@
 <ul>
 <li>left is variable name, right is value.</li>
 </ul>
-<div id="82365563" class="cell" data-execution_count="2">
+<div id="5d722ac2" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb9-2"><a href="#cb9-2"></a>b <span class="op">=</span> <span class="fl">3.1</span></span>
 <span id="cb9-3"><a href="#cb9-3"></a>c <span class="op">=</span> <span class="st">"Teemo"</span></span>
@@ -632,15 +632,15 @@ Teemo</code></pre>
 <ul>
 <li>Always give a value when you start to create a variable</li>
 </ul>
-<div id="334913dc" class="cell" data-execution_count="3">
+<div id="562536cf" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>d</span>
 <span id="cb11-2"><a href="#cb11-2"></a><span class="bu">print</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>NameError: name 'd' is not defined</code></pre>
 </div>
 </div>
-<div id="8ed94470" class="cell" data-execution_count="4">
-<div class="cell-output cell-output-display" data-execution_count="49">
+<div id="c4a8b936" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>'11'</code></pre>
 </div>
 </div>
@@ -656,7 +656,7 @@ Teemo</code></pre>
 </ul></li>
 </ul>
 <p>For example:</p>
-<div id="014a4058" class="cell" data-execution_count="5">
+<div id="eac774e5" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># Implicit Conversion</span></span>
 <span id="cb14-2"><a href="#cb14-2"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb14-3"><a href="#cb14-3"></a><span class="bu">print</span>(<span class="ss">f"a is </span><span class="sc">{</span><span class="bu">type</span>(a)<span class="sc">}</span><span class="ss">"</span>)</span>
@@ -684,7 +684,7 @@ c is &lt;class 'float'&gt;</code></pre>
 </ul></li>
 </ul>
 <p>For example:</p>
-<div id="db0a868e" class="cell" data-execution_count="6">
+<div id="85e7535f" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># Explicit Conversion</span></span>
 <span id="cb16-2"><a href="#cb16-2"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb16-3"><a href="#cb16-3"></a><span class="bu">print</span>(<span class="ss">f"a is </span><span class="sc">{</span><span class="bu">type</span>(a)<span class="sc">}</span><span class="ss">"</span>)</span>
@@ -702,11 +702,132 @@ b is &lt;class 'str'&gt;</code></pre>
 <pre><code>TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
 </div>
 </div>
-<div id="d51740db" class="cell" data-execution_count="7">
+<div id="426ba49a" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1"></a>c <span class="op">=</span> <span class="bu">str</span>(a) <span class="op">+</span> b </span>
 <span id="cb19-2"><a href="#cb19-2"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>c<span class="sc">}</span><span class="ss"> is </span><span class="sc">{</span><span class="bu">type</span>(c)<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1python is &lt;class 'str'&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="basic-python-syntax-7" class="slide level2">
+<h2>Basic Python syntax</h2>
+<h3 id="basic-arithmetic-operations">Basic arithmetic operations</h3>
+<p><br></p>
+<table>
+<thead>
+<tr class="header">
+<th>Operation</th>
+<th>Operator</th>
+<th>Example</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Addition</td>
+<td>+</td>
+<td>5 + 3</td>
+<td>8</td>
+</tr>
+<tr class="even">
+<td>Subtraction</td>
+<td>-</td>
+<td>7 - 2</td>
+<td>5</td>
+</tr>
+<tr class="odd">
+<td>Multiplication</td>
+<td>*</td>
+<td>4 * 6</td>
+<td>24</td>
+</tr>
+<tr class="even">
+<td>Division</td>
+<td>/</td>
+<td>10 / 2</td>
+<td>5.0</td>
+</tr>
+<tr class="odd">
+<td>Floor Division</td>
+<td>//</td>
+<td>10 // 3</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Exponentiation</td>
+<td>**</td>
+<td>2 ** 3</td>
+<td>8</td>
+</tr>
+<tr class="odd">
+<td>Modulus</td>
+<td>%</td>
+<td>10 % 3</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="control-flow-statements" class="slide level2 smaller">
+<h2>Control Flow Statements</h2>
+<h3 id="conditional-statements">Conditional statements</h3>
+<p><br></p>
+<table>
+<colgroup>
+<col style="width: 23%">
+<col style="width: 25%">
+<col style="width: 51%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Condition</th>
+<th>Mathematical Expression</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equal</td>
+<td>a == b</td>
+<td>True if a is equal to b; otherwise, False.</td>
+</tr>
+<tr class="even">
+<td>Not Equal</td>
+<td>a != b</td>
+<td>True if a is not equal to b; otherwise, False.</td>
+</tr>
+<tr class="odd">
+<td>Greater Than</td>
+<td>a &gt; b</td>
+<td>True if a is greater than b; otherwise, False.</td>
+</tr>
+<tr class="even">
+<td>Less Than</td>
+<td>a &lt; b</td>
+<td>True if a is less than b; otherwise, False.</td>
+</tr>
+<tr class="odd">
+<td>Greater Than or Equal</td>
+<td>a &gt;= b</td>
+<td>True if a is greater than or equal to b; otherwise, False.</td>
+</tr>
+<tr class="even">
+<td>Less Than or Equal</td>
+<td>a &lt;= b</td>
+<td>True if a is less than or equal to b; otherwise, False.</td>
+</tr>
+</tbody>
+</table>
+<p><br> <br></p>
+<p>And usually together with <code>if</code> statement</p>
+<div id="4262a5fb" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1"></a>a <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb21-2"><a href="#cb21-2"></a>b <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb21-3"><a href="#cb21-3"></a><span class="cf">if</span> b <span class="op">&gt;</span> a:</span>
+<span id="cb21-4"><a href="#cb21-4"></a>  <span class="bu">print</span>(<span class="st">"b is greater than a"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>b is greater than a</code></pre>
 </div>
 </div>
 

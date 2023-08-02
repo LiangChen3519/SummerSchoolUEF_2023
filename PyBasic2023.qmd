@@ -281,12 +281,50 @@ print(f"{c} is {type(c)}")
 ```
 
 
+## Basic Python syntax
+### Basic arithmetic operations
+
+<br/>
+
+| Operation     | Operator | Example           | Result      |
+|---------------|----------|-------------------|-------------|
+| Addition      | +        | 5 + 3             | 8           |
+| Subtraction   | -        | 7 - 2             | 5           |
+| Multiplication| *        | 4 * 6             | 24          |
+| Division      | /        | 10 / 2            | 5.0         |
+| Floor Division| //       | 10 // 3           | 3           |
+| Exponentiation| **       | 2 ** 3            | 8           |
+| Modulus       | %        | 10 % 3            | 1           |
 
 
 
+## Control Flow Statements {.smaller}
+### Conditional statements
+
+<br/>
+
+| Condition             | Mathematical Expression  | Description                                      |
+|-----------------------|-------------------------|--------------------------------------------------|
+| Equal                 | a == b                  | True if a is equal to b; otherwise, False.       |
+| Not Equal             | a != b                  | True if a is not equal to b; otherwise, False.   |
+| Greater Than          | a > b                   | True if a is greater than b; otherwise, False.   |
+| Less Than             | a < b                   | True if a is less than b; otherwise, False.      |
+| Greater Than or Equal | a >= b                  | True if a is greater than or equal to b; otherwise, False. |
+| Less Than or Equal    | a <= b                  | True if a is less than or equal to b; otherwise, False.    |
+
+<br/>
+<br/>
+
+And usually together with `if` statement
+```{python}
+#| echo: true
 
 
-
+a = 1
+b = 2
+if b > a:
+  print("b is greater than a")
+```
 
 
 
