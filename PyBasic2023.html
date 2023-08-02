@@ -530,7 +530,7 @@
 <p>How about we remove the <em>indentation</em> of above code:</p>
 <p><br></p>
 <div class="fragment fade-in">
-<div id="d4fdb6ab" class="cell" data-execution_count="1">
+<div id="480e5952" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="cf">if</span> <span class="dv">5</span> <span class="op">&gt;</span> <span class="dv">2</span>:</span>
 <span id="cb7-2"><a href="#cb7-2"></a><span class="bu">print</span>(<span class="st">"Five is greater than two!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
@@ -609,6 +609,106 @@
 <section id="basic-python-syntax-4" class="slide level2 smaller">
 <h2>Basic Python syntax</h2>
 <h3 id="variables-1">Variables</h3>
+<ul>
+<li>left is variable name, right is value.</li>
+</ul>
+<div id="82365563" class="cell" data-execution_count="2">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>a <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb9-2"><a href="#cb9-2"></a>b <span class="op">=</span> <span class="fl">3.1</span></span>
+<span id="cb9-3"><a href="#cb9-3"></a>c <span class="op">=</span> <span class="st">"Teemo"</span></span>
+<span id="cb9-4"><a href="#cb9-4"></a></span>
+<span id="cb9-5"><a href="#cb9-5"></a><span class="co"># or you can assign variables just like follow:</span></span>
+<span id="cb9-6"><a href="#cb9-6"></a></span>
+<span id="cb9-7"><a href="#cb9-7"></a>a,b,c <span class="op">=</span> <span class="dv">1</span>,<span class="fl">3.1</span>,<span class="st">"Teemo"</span></span>
+<span id="cb9-8"><a href="#cb9-8"></a><span class="bu">print</span>(a)</span>
+<span id="cb9-9"><a href="#cb9-9"></a><span class="bu">print</span>(b)</span>
+<span id="cb9-10"><a href="#cb9-10"></a><span class="bu">print</span>(c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1
+3.1
+Teemo</code></pre>
+</div>
+</div>
+<ul>
+<li>Always give a value when you start to create a variable</li>
+</ul>
+<div id="334913dc" class="cell" data-execution_count="3">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>d</span>
+<span id="cb11-2"><a href="#cb11-2"></a><span class="bu">print</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-error">
+<pre><code>NameError: name 'd' is not defined</code></pre>
+</div>
+</div>
+<div id="8ed94470" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="49">
+<pre><code>'11'</code></pre>
+</div>
+</div>
+</section>
+<section id="basic-python-syntax-5" class="slide level2 smaller">
+<h2>Basic Python syntax</h2>
+<h3 id="variables-2">Variables</h3>
+<ul>
+<li>It is possible for converting data of one type to another.
+<ul>
+<li>Implicit Conversion - automatic type conversion</li>
+<li>Explicit Conversion - manual type conversion</li>
+</ul></li>
+</ul>
+<p>For example:</p>
+<div id="014a4058" class="cell" data-execution_count="5">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># Implicit Conversion</span></span>
+<span id="cb14-2"><a href="#cb14-2"></a>a <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a><span class="bu">print</span>(<span class="ss">f"a is </span><span class="sc">{</span><span class="bu">type</span>(a)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb14-4"><a href="#cb14-4"></a></span>
+<span id="cb14-5"><a href="#cb14-5"></a>b <span class="op">=</span> <span class="fl">1.0</span></span>
+<span id="cb14-6"><a href="#cb14-6"></a><span class="bu">print</span>(<span class="ss">f"b is </span><span class="sc">{</span><span class="bu">type</span>(b)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb14-7"><a href="#cb14-7"></a></span>
+<span id="cb14-8"><a href="#cb14-8"></a>c <span class="op">=</span> a<span class="op">+</span>b</span>
+<span id="cb14-9"><a href="#cb14-9"></a><span class="bu">print</span>(<span class="ss">f"c is </span><span class="sc">{</span><span class="bu">type</span>(c)<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a is &lt;class 'int'&gt;
+b is &lt;class 'float'&gt;
+c is &lt;class 'float'&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="basic-python-syntax-6" class="slide level2 smaller">
+<h2>Basic Python syntax</h2>
+<h3 id="variables-3">Variables</h3>
+<ul>
+<li>It is possible for converting data of one type to another.
+<ul>
+<li>Implicit Conversion - automatic type conversion</li>
+<li>Explicit Conversion - manual type conversion</li>
+</ul></li>
+</ul>
+<p>For example:</p>
+<div id="db0a868e" class="cell" data-execution_count="6">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># Explicit Conversion</span></span>
+<span id="cb16-2"><a href="#cb16-2"></a>a <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb16-3"><a href="#cb16-3"></a><span class="bu">print</span>(<span class="ss">f"a is </span><span class="sc">{</span><span class="bu">type</span>(a)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb16-4"><a href="#cb16-4"></a></span>
+<span id="cb16-5"><a href="#cb16-5"></a>b <span class="op">=</span> <span class="st">"python"</span></span>
+<span id="cb16-6"><a href="#cb16-6"></a><span class="bu">print</span>(<span class="ss">f"b is </span><span class="sc">{</span><span class="bu">type</span>(b)<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb16-7"><a href="#cb16-7"></a></span>
+<span id="cb16-8"><a href="#cb16-8"></a>c <span class="op">=</span> a<span class="op">+</span>b</span>
+<span id="cb16-9"><a href="#cb16-9"></a><span class="bu">print</span>(<span class="ss">f"c is </span><span class="sc">{</span><span class="bu">type</span>(c)<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a is &lt;class 'int'&gt;
+b is &lt;class 'str'&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-error">
+<pre><code>TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
+</div>
+</div>
+<div id="d51740db" class="cell" data-execution_count="7">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1"></a>c <span class="op">=</span> <span class="bu">str</span>(a) <span class="op">+</span> b </span>
+<span id="cb19-2"><a href="#cb19-2"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>c<span class="sc">}</span><span class="ss"> is </span><span class="sc">{</span><span class="bu">type</span>(c)<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1python is &lt;class 'str'&gt;</code></pre>
+</div>
+</div>
 
 <img src="UEF musta logo engl pysty.jpg" class="slide-logo r-stretch"><div class="footer footer-default">
 

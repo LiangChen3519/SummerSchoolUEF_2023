@@ -193,9 +193,92 @@ In Python, there are several built-in data types for variables. Here is a table 
 ## Basic Python syntax {.smaller}
 ### Variables
 
+- left is variable name, right is value.
+
+```{python}
+#| echo: true
+
+a = 1
+b = 3.1
+c = "Teemo"
+
+# or you can assign variables just like follow:
+
+a,b,c = 1,3.1,"Teemo"
+print(a)
+print(b)
+print(c)
+```
+
+- Always give a value when you start to create a variable
+
+```{python}
+#| error: true
+#| echo: true
+
+d
+print(d)
+```
+
+```{python}
+str(1)+'1'
+```
+
+## Basic Python syntax {.smaller}
+### Variables
+
+- It is possible for converting data of one type to another.
+    - Implicit Conversion - automatic type conversion
+    - Explicit Conversion - manual type conversion
+    
+For example:
+
+```{python}
+#| error: true
+#| echo: true
 
 
+# Implicit Conversion
+a = 1
+print(f"a is {type(a)}")
 
+b = 1.0
+print(f"b is {type(b)}")
+
+c = a+b
+print(f"c is {type(c)}")
+```
+## Basic Python syntax {.smaller}
+### Variables
+
+- It is possible for converting data of one type to another.
+    - Implicit Conversion - automatic type conversion
+    - Explicit Conversion - manual type conversion
+    
+For example:
+
+```{python}
+#| error: true
+#| echo: true
+
+# Explicit Conversion
+a = 1
+print(f"a is {type(a)}")
+
+b = "python"
+print(f"b is {type(b)}")
+
+c = a+b
+print(f"c is {type(c)}")
+```
+   
+```{python}
+#| error: true
+#| echo: true
+
+c = str(a) + b 
+print(f"{c} is {type(c)}")
+```
 
 
 
