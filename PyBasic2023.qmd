@@ -1,6 +1,15 @@
 ---
 title: "Python basics for summer school-2023, UEF"
 subtitle: Linking python to basic data science"
+author:
+    name: "Liang Chen"
+    affiliations:
+        name: University of Eastern Finland
+        cicy: Joensuu
+        
+    email: liangch@uef.fi
+    orcid: 0000-0002-1811-5717
+date: "2023-08-08"
 format: 
     revealjs:
         height: 900
@@ -37,9 +46,6 @@ In this course, we will show you basic syntax of python and some usefull package
 :::
 
 ::: {.column width="50%"}
-- Basic data structure
-  - List
-  - Dictionaries
 - Function
   - define and call function
 - Usefull modules
@@ -190,7 +196,7 @@ In Python, there are several built-in data types for variables. Here is a table 
 
 
 
-## Basic Python syntax {.smaller}
+## Basic Python syntax
 ### Variables
 
 - left is variable name, right is value.
@@ -224,7 +230,7 @@ print(d)
 str(1)+'1'
 ```
 
-## Basic Python syntax {.smaller}
+## Basic Python syntax 
 ### Variables
 
 - It is possible for converting data of one type to another.
@@ -248,7 +254,8 @@ print(f"b is {type(b)}")
 c = a+b
 print(f"c is {type(c)}")
 ```
-## Basic Python syntax {.smaller}
+
+## Basic Python syntax
 ### Variables
 
 - It is possible for converting data of one type to another.
@@ -280,6 +287,11 @@ c = str(a) + b
 print(f"{c} is {type(c)}")
 ```
 
+## Basic Python syntax
+### Variables ---- list
+
+## Basic Python syntax
+### Variables ---- dict
 
 ## Basic Python syntax
 ### Basic arithmetic operations
@@ -327,4 +339,65 @@ if b > a:
 ```
 
 
+
+## Control Flow Statements 
+### Conditional statements
+
+If we want to try multi-conditions, `elis` and `else` keywords are needed:
+
+```{python}
+#| echo: true
+
+a = 33
+b = 33
+if b > a:
+    print("b is greater than a")
+elif a == b:
+    print("a and b are equal")
+else:
+    print("b is less than a")
+ 
+```
+
+
+## Control Flow Statements
+### Loops
+
+- `for` loop
+- `while` loop
+- Both `for` and `while` loops can be liked to:
+    - `break` statement
+        - stop the loop before it has looped through all the items
+    - `continue` statement
+        - stop current iteration, move to next
+    - `else` statement
+        - to specifies codes to be executed when loop is ended
+
+## Control Flow Statements
+### `for` loop
+
+
+```{python}
+#|echo: true
+
+numbers = [1,2,3,4]
+for x in numbers:
+    if x == 1:
+        continue
+    if x == 3:
+        continue
+    print(x)
+else:
+    print("loos is over")
+```
+with `break`:
+```{python}
+#|echo: true
+
+numbers = [1,2,3,4]
+for x in numbers:
+    if x == 2:
+      break
+    print(x)
+```
 

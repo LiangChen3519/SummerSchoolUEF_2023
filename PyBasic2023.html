@@ -10,6 +10,8 @@
 <link href="PyBasic2023_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.274">
 
+  <meta name="author" content="Liang Chen">
+  <meta name="dcterms.date" content="2023-08-08">
   <title>Python basics for summer school-2023, UEF</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -396,8 +398,20 @@
   <p class="subtitle">Linking python to basic data science”</p>
 
 <div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Liang Chen <a href="https://orcid.org/0000-0002-1811-5717" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a>
+</div>
+<div class="quarto-title-author-email">
+<a href="mailto:liangch@uef.fi">liangch@uef.fi</a>
+</div>
+        <p class="quarto-title-affiliation">
+            University of Eastern Finland
+          </p>
+    </div>
 </div>
 
+  <p class="date">2023-08-08</p>
 </section>
 <section id="table-of-contents" class="slide level2">
 <h2>Table of Contents</h2>
@@ -420,11 +434,6 @@
 <p><img data-src="python-logo.png"></p>
 </div><div class="column" style="width:50%;">
 <ul>
-<li>Basic data structure
-<ul>
-<li>List</li>
-<li>Dictionaries</li>
-</ul></li>
 <li>Function
 <ul>
 <li>define and call function</li>
@@ -530,7 +539,7 @@
 <p>How about we remove the <em>indentation</em> of above code:</p>
 <p><br></p>
 <div class="fragment fade-in">
-<div id="3d4f3887" class="cell" data-execution_count="1">
+<div id="f22b7713" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="cf">if</span> <span class="dv">5</span> <span class="op">&gt;</span> <span class="dv">2</span>:</span>
 <span id="cb7-2"><a href="#cb7-2"></a><span class="bu">print</span>(<span class="st">"Five is greater than two!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
@@ -606,13 +615,13 @@
 </tbody>
 </table>
 </section>
-<section id="basic-python-syntax-4" class="slide level2 smaller">
+<section id="basic-python-syntax-4" class="slide level2">
 <h2>Basic Python syntax</h2>
 <h3 id="variables-1">Variables</h3>
 <ul>
 <li>left is variable name, right is value.</li>
 </ul>
-<div id="5d722ac2" class="cell" data-execution_count="2">
+<div id="11bc38e2" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb9-2"><a href="#cb9-2"></a>b <span class="op">=</span> <span class="fl">3.1</span></span>
 <span id="cb9-3"><a href="#cb9-3"></a>c <span class="op">=</span> <span class="st">"Teemo"</span></span>
@@ -632,20 +641,20 @@ Teemo</code></pre>
 <ul>
 <li>Always give a value when you start to create a variable</li>
 </ul>
-<div id="562536cf" class="cell" data-execution_count="3">
+<div id="d4b9996b" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>d</span>
 <span id="cb11-2"><a href="#cb11-2"></a><span class="bu">print</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>NameError: name 'd' is not defined</code></pre>
 </div>
 </div>
-<div id="c4a8b936" class="cell" data-execution_count="4">
-<div class="cell-output cell-output-display" data-execution_count="4">
+<div id="63ad93c9" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="81">
 <pre><code>'11'</code></pre>
 </div>
 </div>
 </section>
-<section id="basic-python-syntax-5" class="slide level2 smaller">
+<section id="basic-python-syntax-5" class="slide level2">
 <h2>Basic Python syntax</h2>
 <h3 id="variables-2">Variables</h3>
 <ul>
@@ -656,7 +665,7 @@ Teemo</code></pre>
 </ul></li>
 </ul>
 <p>For example:</p>
-<div id="eac774e5" class="cell" data-execution_count="5">
+<div id="76878b5a" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># Implicit Conversion</span></span>
 <span id="cb14-2"><a href="#cb14-2"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb14-3"><a href="#cb14-3"></a><span class="bu">print</span>(<span class="ss">f"a is </span><span class="sc">{</span><span class="bu">type</span>(a)<span class="sc">}</span><span class="ss">"</span>)</span>
@@ -673,7 +682,7 @@ c is &lt;class 'float'&gt;</code></pre>
 </div>
 </div>
 </section>
-<section id="basic-python-syntax-6" class="slide level2 smaller">
+<section id="basic-python-syntax-6" class="slide level2">
 <h2>Basic Python syntax</h2>
 <h3 id="variables-3">Variables</h3>
 <ul>
@@ -684,7 +693,7 @@ c is &lt;class 'float'&gt;</code></pre>
 </ul></li>
 </ul>
 <p>For example:</p>
-<div id="85e7535f" class="cell" data-execution_count="6">
+<div id="e4ceac57" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># Explicit Conversion</span></span>
 <span id="cb16-2"><a href="#cb16-2"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb16-3"><a href="#cb16-3"></a><span class="bu">print</span>(<span class="ss">f"a is </span><span class="sc">{</span><span class="bu">type</span>(a)<span class="sc">}</span><span class="ss">"</span>)</span>
@@ -702,7 +711,7 @@ b is &lt;class 'str'&gt;</code></pre>
 <pre><code>TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
 </div>
 </div>
-<div id="426ba49a" class="cell" data-execution_count="7">
+<div id="1c35f9c7" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1"></a>c <span class="op">=</span> <span class="bu">str</span>(a) <span class="op">+</span> b </span>
 <span id="cb19-2"><a href="#cb19-2"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>c<span class="sc">}</span><span class="ss"> is </span><span class="sc">{</span><span class="bu">type</span>(c)<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -711,6 +720,14 @@ b is &lt;class 'str'&gt;</code></pre>
 </div>
 </section>
 <section id="basic-python-syntax-7" class="slide level2">
+<h2>Basic Python syntax</h2>
+<h3 id="variables---list">Variables —- list</h3>
+</section>
+<section id="basic-python-syntax-8" class="slide level2">
+<h2>Basic Python syntax</h2>
+<h3 id="variables---dict">Variables —- dict</h3>
+</section>
+<section id="basic-python-syntax-9" class="slide level2">
 <h2>Basic Python syntax</h2>
 <h3 id="basic-arithmetic-operations">Basic arithmetic operations</h3>
 <p><br></p>
@@ -821,13 +838,85 @@ b is &lt;class 'str'&gt;</code></pre>
 </table>
 <p><br> <br></p>
 <p>And usually together with <code>if</code> statement</p>
-<div id="4262a5fb" class="cell" data-execution_count="8">
+<div id="6286e064" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb21-2"><a href="#cb21-2"></a>b <span class="op">=</span> <span class="dv">2</span></span>
 <span id="cb21-3"><a href="#cb21-3"></a><span class="cf">if</span> b <span class="op">&gt;</span> a:</span>
 <span id="cb21-4"><a href="#cb21-4"></a>  <span class="bu">print</span>(<span class="st">"b is greater than a"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>b is greater than a</code></pre>
+</div>
+</div>
+</section>
+<section id="control-flow-statements-1" class="slide level2">
+<h2>Control Flow Statements</h2>
+<h3 id="conditional-statements-1">Conditional statements</h3>
+<p>If we want to try multi-conditions, <code>elis</code> and <code>else</code> keywords are needed:</p>
+<div id="31d0c838" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1"></a>a <span class="op">=</span> <span class="dv">33</span></span>
+<span id="cb23-2"><a href="#cb23-2"></a>b <span class="op">=</span> <span class="dv">33</span></span>
+<span id="cb23-3"><a href="#cb23-3"></a><span class="cf">if</span> b <span class="op">&gt;</span> a:</span>
+<span id="cb23-4"><a href="#cb23-4"></a>    <span class="bu">print</span>(<span class="st">"b is greater than a"</span>)</span>
+<span id="cb23-5"><a href="#cb23-5"></a><span class="cf">elif</span> a <span class="op">==</span> b:</span>
+<span id="cb23-6"><a href="#cb23-6"></a>    <span class="bu">print</span>(<span class="st">"a and b are equal"</span>)</span>
+<span id="cb23-7"><a href="#cb23-7"></a><span class="cf">else</span>:</span>
+<span id="cb23-8"><a href="#cb23-8"></a>    <span class="bu">print</span>(<span class="st">"b is less than a"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a and b are equal</code></pre>
+</div>
+</div>
+</section>
+<section id="control-flow-statements-2" class="slide level2">
+<h2>Control Flow Statements</h2>
+<h3 id="loops">Loops</h3>
+<ul>
+<li><code>for</code> loop</li>
+<li><code>while</code> loop</li>
+<li>Both <code>for</code> and <code>while</code> loops can be liked to:
+<ul>
+<li><code>break</code> statement
+<ul>
+<li>stop the loop before it has looped through all the items</li>
+</ul></li>
+<li><code>continue</code> statement
+<ul>
+<li>stop current iteration, move to next</li>
+</ul></li>
+<li><code>else</code> statement
+<ul>
+<li>to specifies codes to be executed when loop is ended</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="control-flow-statements-3" class="slide level2">
+<h2>Control Flow Statements</h2>
+<h3 id="for-loop"><code>for</code> loop</h3>
+<div id="17540533" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
+<span id="cb25-2"><a href="#cb25-2"></a><span class="cf">for</span> x <span class="kw">in</span> numbers:</span>
+<span id="cb25-3"><a href="#cb25-3"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb25-4"><a href="#cb25-4"></a>        <span class="cf">continue</span></span>
+<span id="cb25-5"><a href="#cb25-5"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">3</span>:</span>
+<span id="cb25-6"><a href="#cb25-6"></a>        <span class="cf">continue</span></span>
+<span id="cb25-7"><a href="#cb25-7"></a>    <span class="bu">print</span>(x)</span>
+<span id="cb25-8"><a href="#cb25-8"></a><span class="cf">else</span>:</span>
+<span id="cb25-9"><a href="#cb25-9"></a>    <span class="bu">print</span>(<span class="st">"loos is over"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>2
+4
+loos is over</code></pre>
+</div>
+</div>
+<p>with <code>break</code>:</p>
+<div id="8dcd7f77" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
+<span id="cb27-2"><a href="#cb27-2"></a><span class="cf">for</span> x <span class="kw">in</span> numbers:</span>
+<span id="cb27-3"><a href="#cb27-3"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">2</span>:</span>
+<span id="cb27-4"><a href="#cb27-4"></a>      <span class="cf">break</span></span>
+<span id="cb27-5"><a href="#cb27-5"></a>    <span class="bu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1</code></pre>
 </div>
 </div>
 
