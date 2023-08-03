@@ -22,6 +22,12 @@ format:
         theme: simple
         menu:
           width: wide
+          
+title-slide-attributes:
+    data-background-image: "TittleLogo.png"
+    data-background-size: 50%
+    data-background-position: 5% 5%
+    
 engine: jupyter
 jupyter: python3
 keep-ipynb: true
@@ -288,10 +294,93 @@ print(f"{c} is {type(c)}")
 ```
 
 ## Basic Python syntax
-### Variables ---- list
+### Variables ---- *list*
+
+- Elements can be mixed with different types
+```python
+list1 = [1, "2", True, 4]
+```
+- Element can be selected by position index (from 0)
+
+```{python}
+#|echo: true
+
+
+list1 = [1, "2", True, 4]
+print(list1[1])
+```
+## Basic Python syntax {.smaller}
+### Variables ---- *list*
+
+<br/>
+
+| Method                     | Description                                             |
+| -------------------------- | ------------------------------------------------------- |
+| `append(item)`             | Add an element `item` to the end of the list.          |
+| `extend(iterable)`         | Extend the list by appending elements from `iterable`. |
+| `insert(index, item)`      | Insert `item` at the specified `index`.                |
+| `remove(item)`             | Remove the first occurrence of `item` from the list.   |
+| `pop(index=-1)`            | Remove and return the element at `index`.              |
+| `clear()`                  | Remove all elements from the list.                     |
+| `index(item, start, end)`  | Return the index of the first occurrence of `item`.    |
+| `count(item)`              | Return the number of occurrences of `item`.            |
+| `sort(key, reverse)`       | Sort the list in ascending or descending order.        |
+| `reverse()`                | Reverse the order of elements in the list.             |
+| `copy()`                   | Create a shallow copy of the list.                     |
+
+
 
 ## Basic Python syntax
-### Variables ---- dict
+### Variables ---- *dict*
+
+- Dictionaries are used to store data values in key:value pairs.
+    - ordered
+    - changeable
+    - not allow duplicates
+
+```python
+phone = {
+  "brand": "Nokia",
+  "model": "N95",
+  "year": 2006
+}
+```
+
+## Basic Python syntax
+### Variables ---- *dict*
+
+To get keys or values of a dict:
+
+- directly call the key
+
+```{python}
+#| echo: true
+
+
+phone = {
+  "brand": "Nokia",
+  "model": "N95",
+  "year": 2006
+}
+
+print(phone['model'])
+#or
+print(phone.get('model'))
+
+```
+
+```{python}
+#| echo: true
+
+#get values
+print(phone.values())
+#get keys
+print(phone.keys())
+# or both
+print(phone.items())
+```
+
+
 
 ## Basic Python syntax
 ### Basic arithmetic operations
@@ -400,4 +489,75 @@ for x in numbers:
       break
     print(x)
 ```
+
+## Control Flow Statements
+### `while` loop
+
+- Endless execute a set of statements as long as a condition is true.
+
+```python
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+```
+- can also work with `break` and `continue`
+
+```{python}
+#| echo: true
+
+# here 5 is omitted
+i = 0
+while i < 6:
+    i = i + 1
+    if i == 3:
+        continue
+    if i == 4:
+        break
+    print(i)
+```
+
+## Function
+### Define and call function
+
+- The keyword `def` is used to define function
+
+```python
+def say_hello():
+    print("hello world!!")
+```
+- Use the function name to call
+
+```{python}
+#| echo: true
+
+# define a function
+def say_hello():
+    print("hello world!!")
+
+# call the function
+say_hello()
+```
+
+- pass parameter
+
+```{python}
+#| echo: true
+
+
+def say_hello(name):
+    print(name+" hello world!!")
+    
+say_hello("Teemo")
+```
+
+## Usefull modeles
+### Numpy 
+
+
+
+![](Numpy_logo.png){.absolute top=20 right=15 width="100"}
+
+
+
 

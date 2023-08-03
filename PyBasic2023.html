@@ -393,7 +393,7 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-image="TittleLogo.png" data-background-position="5% 5%" data-background-size="50%" class="quarto-title-block center">
   <h1 class="title">Python basics for summer school-2023, UEF</h1>
   <p class="subtitle">Linking python to basic data science”</p>
 
@@ -539,7 +539,7 @@ Liang Chen <a href="https://orcid.org/0000-0002-1811-5717" class="quarto-title-a
 <p>How about we remove the <em>indentation</em> of above code:</p>
 <p><br></p>
 <div class="fragment fade-in">
-<div id="f22b7713" class="cell" data-execution_count="1">
+<div id="88cb3516" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1"></a><span class="cf">if</span> <span class="dv">5</span> <span class="op">&gt;</span> <span class="dv">2</span>:</span>
 <span id="cb7-2"><a href="#cb7-2"></a><span class="bu">print</span>(<span class="st">"Five is greater than two!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
@@ -621,7 +621,7 @@ Liang Chen <a href="https://orcid.org/0000-0002-1811-5717" class="quarto-title-a
 <ul>
 <li>left is variable name, right is value.</li>
 </ul>
-<div id="11bc38e2" class="cell" data-execution_count="2">
+<div id="5be9ebd1" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb9-2"><a href="#cb9-2"></a>b <span class="op">=</span> <span class="fl">3.1</span></span>
 <span id="cb9-3"><a href="#cb9-3"></a>c <span class="op">=</span> <span class="st">"Teemo"</span></span>
@@ -641,15 +641,15 @@ Teemo</code></pre>
 <ul>
 <li>Always give a value when you start to create a variable</li>
 </ul>
-<div id="d4b9996b" class="cell" data-execution_count="3">
+<div id="1d34c77f" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1"></a>d</span>
 <span id="cb11-2"><a href="#cb11-2"></a><span class="bu">print</span>(d)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-error">
 <pre><code>NameError: name 'd' is not defined</code></pre>
 </div>
 </div>
-<div id="63ad93c9" class="cell" data-execution_count="4">
-<div class="cell-output cell-output-display" data-execution_count="81">
+<div id="376b0ed1" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display" data-execution_count="310">
 <pre><code>'11'</code></pre>
 </div>
 </div>
@@ -665,7 +665,7 @@ Teemo</code></pre>
 </ul></li>
 </ul>
 <p>For example:</p>
-<div id="76878b5a" class="cell" data-execution_count="5">
+<div id="ec38c2f9" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1"></a><span class="co"># Implicit Conversion</span></span>
 <span id="cb14-2"><a href="#cb14-2"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb14-3"><a href="#cb14-3"></a><span class="bu">print</span>(<span class="ss">f"a is </span><span class="sc">{</span><span class="bu">type</span>(a)<span class="sc">}</span><span class="ss">"</span>)</span>
@@ -693,7 +693,7 @@ c is &lt;class 'float'&gt;</code></pre>
 </ul></li>
 </ul>
 <p>For example:</p>
-<div id="e4ceac57" class="cell" data-execution_count="6">
+<div id="f38474f2" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1"></a><span class="co"># Explicit Conversion</span></span>
 <span id="cb16-2"><a href="#cb16-2"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb16-3"><a href="#cb16-3"></a><span class="bu">print</span>(<span class="ss">f"a is </span><span class="sc">{</span><span class="bu">type</span>(a)<span class="sc">}</span><span class="ss">"</span>)</span>
@@ -711,7 +711,7 @@ b is &lt;class 'str'&gt;</code></pre>
 <pre><code>TypeError: unsupported operand type(s) for +: 'int' and 'str'</code></pre>
 </div>
 </div>
-<div id="1c35f9c7" class="cell" data-execution_count="7">
+<div id="02882e45" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1"></a>c <span class="op">=</span> <span class="bu">str</span>(a) <span class="op">+</span> b </span>
 <span id="cb19-2"><a href="#cb19-2"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>c<span class="sc">}</span><span class="ss"> is </span><span class="sc">{</span><span class="bu">type</span>(c)<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -721,13 +721,139 @@ b is &lt;class 'str'&gt;</code></pre>
 </section>
 <section id="basic-python-syntax-7" class="slide level2">
 <h2>Basic Python syntax</h2>
-<h3 id="variables---list">Variables —- list</h3>
+<h3 id="variables---list">Variables —- <em>list</em></h3>
+<ul>
+<li>Elements can be mixed with different types</li>
+</ul>
+<div class="sourceCode" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1"></a>list1 <span class="op">=</span> [<span class="dv">1</span>, <span class="st">"2"</span>, <span class="va">True</span>, <span class="dv">4</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Element can be selected by position index (from 0)</li>
+</ul>
+<div id="920ad613" class="cell" data-execution_count="8">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1"></a>list1 <span class="op">=</span> [<span class="dv">1</span>, <span class="st">"2"</span>, <span class="va">True</span>, <span class="dv">4</span>]</span>
+<span id="cb22-2"><a href="#cb22-2"></a><span class="bu">print</span>(list1[<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>2</code></pre>
+</div>
+</div>
 </section>
-<section id="basic-python-syntax-8" class="slide level2">
+<section id="basic-python-syntax-8" class="slide level2 smaller">
 <h2>Basic Python syntax</h2>
-<h3 id="variables---dict">Variables —- dict</h3>
+<h3 id="variables---list-1">Variables —- <em>list</em></h3>
+<p><br></p>
+<table>
+<colgroup>
+<col style="width: 32%">
+<col style="width: 67%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>append(item)</code></td>
+<td>Add an element <code>item</code> to the end of the list.</td>
+</tr>
+<tr class="even">
+<td><code>extend(iterable)</code></td>
+<td>Extend the list by appending elements from <code>iterable</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>insert(index, item)</code></td>
+<td>Insert <code>item</code> at the specified <code>index</code>.</td>
+</tr>
+<tr class="even">
+<td><code>remove(item)</code></td>
+<td>Remove the first occurrence of <code>item</code> from the list.</td>
+</tr>
+<tr class="odd">
+<td><code>pop(index=-1)</code></td>
+<td>Remove and return the element at <code>index</code>.</td>
+</tr>
+<tr class="even">
+<td><code>clear()</code></td>
+<td>Remove all elements from the list.</td>
+</tr>
+<tr class="odd">
+<td><code>index(item, start, end)</code></td>
+<td>Return the index of the first occurrence of <code>item</code>.</td>
+</tr>
+<tr class="even">
+<td><code>count(item)</code></td>
+<td>Return the number of occurrences of <code>item</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>sort(key, reverse)</code></td>
+<td>Sort the list in ascending or descending order.</td>
+</tr>
+<tr class="even">
+<td><code>reverse()</code></td>
+<td>Reverse the order of elements in the list.</td>
+</tr>
+<tr class="odd">
+<td><code>copy()</code></td>
+<td>Create a shallow copy of the list.</td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="basic-python-syntax-9" class="slide level2">
+<h2>Basic Python syntax</h2>
+<h3 id="variables---dict">Variables —- <em>dict</em></h3>
+<ul>
+<li>Dictionaries are used to store data values in key:value pairs.
+<ul>
+<li>ordered</li>
+<li>changeable</li>
+<li>not allow duplicates</li>
+</ul></li>
+</ul>
+<div class="sourceCode" id="cb24"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1"></a>phone <span class="op">=</span> {</span>
+<span id="cb24-2"><a href="#cb24-2"></a>  <span class="st">"brand"</span>: <span class="st">"Nokia"</span>,</span>
+<span id="cb24-3"><a href="#cb24-3"></a>  <span class="st">"model"</span>: <span class="st">"N95"</span>,</span>
+<span id="cb24-4"><a href="#cb24-4"></a>  <span class="st">"year"</span>: <span class="dv">2006</span></span>
+<span id="cb24-5"><a href="#cb24-5"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="basic-python-syntax-10" class="slide level2">
+<h2>Basic Python syntax</h2>
+<h3 id="variables---dict-1">Variables —- <em>dict</em></h3>
+<p>To get keys or values of a dict:</p>
+<ul>
+<li>directly call the key</li>
+</ul>
+<div id="6b7f5904" class="cell" data-execution_count="9">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1"></a>phone <span class="op">=</span> {</span>
+<span id="cb25-2"><a href="#cb25-2"></a>  <span class="st">"brand"</span>: <span class="st">"Nokia"</span>,</span>
+<span id="cb25-3"><a href="#cb25-3"></a>  <span class="st">"model"</span>: <span class="st">"N95"</span>,</span>
+<span id="cb25-4"><a href="#cb25-4"></a>  <span class="st">"year"</span>: <span class="dv">2006</span></span>
+<span id="cb25-5"><a href="#cb25-5"></a>}</span>
+<span id="cb25-6"><a href="#cb25-6"></a></span>
+<span id="cb25-7"><a href="#cb25-7"></a><span class="bu">print</span>(phone[<span class="st">'model'</span>])</span>
+<span id="cb25-8"><a href="#cb25-8"></a><span class="co">#or</span></span>
+<span id="cb25-9"><a href="#cb25-9"></a><span class="bu">print</span>(phone.get(<span class="st">'model'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>N95
+N95</code></pre>
+</div>
+</div>
+<div id="38d275ca" class="cell" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1"></a><span class="co">#get values</span></span>
+<span id="cb27-2"><a href="#cb27-2"></a><span class="bu">print</span>(phone.values())</span>
+<span id="cb27-3"><a href="#cb27-3"></a><span class="co">#get keys</span></span>
+<span id="cb27-4"><a href="#cb27-4"></a><span class="bu">print</span>(phone.keys())</span>
+<span id="cb27-5"><a href="#cb27-5"></a><span class="co"># or both</span></span>
+<span id="cb27-6"><a href="#cb27-6"></a><span class="bu">print</span>(phone.items())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>dict_values(['Nokia', 'N95', 2006])
+dict_keys(['brand', 'model', 'year'])
+dict_items([('brand', 'Nokia'), ('model', 'N95'), ('year', 2006)])</code></pre>
+</div>
+</div>
+</section>
+<section id="basic-python-syntax-11" class="slide level2">
 <h2>Basic Python syntax</h2>
 <h3 id="basic-arithmetic-operations">Basic arithmetic operations</h3>
 <p><br></p>
@@ -838,11 +964,11 @@ b is &lt;class 'str'&gt;</code></pre>
 </table>
 <p><br> <br></p>
 <p>And usually together with <code>if</code> statement</p>
-<div id="6286e064" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1"></a>a <span class="op">=</span> <span class="dv">1</span></span>
-<span id="cb21-2"><a href="#cb21-2"></a>b <span class="op">=</span> <span class="dv">2</span></span>
-<span id="cb21-3"><a href="#cb21-3"></a><span class="cf">if</span> b <span class="op">&gt;</span> a:</span>
-<span id="cb21-4"><a href="#cb21-4"></a>  <span class="bu">print</span>(<span class="st">"b is greater than a"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="7d2d24d1" class="cell" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1"></a>a <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb29-2"><a href="#cb29-2"></a>b <span class="op">=</span> <span class="dv">2</span></span>
+<span id="cb29-3"><a href="#cb29-3"></a><span class="cf">if</span> b <span class="op">&gt;</span> a:</span>
+<span id="cb29-4"><a href="#cb29-4"></a>  <span class="bu">print</span>(<span class="st">"b is greater than a"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>b is greater than a</code></pre>
 </div>
@@ -852,15 +978,15 @@ b is &lt;class 'str'&gt;</code></pre>
 <h2>Control Flow Statements</h2>
 <h3 id="conditional-statements-1">Conditional statements</h3>
 <p>If we want to try multi-conditions, <code>elis</code> and <code>else</code> keywords are needed:</p>
-<div id="31d0c838" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1"></a>a <span class="op">=</span> <span class="dv">33</span></span>
-<span id="cb23-2"><a href="#cb23-2"></a>b <span class="op">=</span> <span class="dv">33</span></span>
-<span id="cb23-3"><a href="#cb23-3"></a><span class="cf">if</span> b <span class="op">&gt;</span> a:</span>
-<span id="cb23-4"><a href="#cb23-4"></a>    <span class="bu">print</span>(<span class="st">"b is greater than a"</span>)</span>
-<span id="cb23-5"><a href="#cb23-5"></a><span class="cf">elif</span> a <span class="op">==</span> b:</span>
-<span id="cb23-6"><a href="#cb23-6"></a>    <span class="bu">print</span>(<span class="st">"a and b are equal"</span>)</span>
-<span id="cb23-7"><a href="#cb23-7"></a><span class="cf">else</span>:</span>
-<span id="cb23-8"><a href="#cb23-8"></a>    <span class="bu">print</span>(<span class="st">"b is less than a"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="2d5a8ccd" class="cell" data-execution_count="12">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1"></a>a <span class="op">=</span> <span class="dv">33</span></span>
+<span id="cb31-2"><a href="#cb31-2"></a>b <span class="op">=</span> <span class="dv">33</span></span>
+<span id="cb31-3"><a href="#cb31-3"></a><span class="cf">if</span> b <span class="op">&gt;</span> a:</span>
+<span id="cb31-4"><a href="#cb31-4"></a>    <span class="bu">print</span>(<span class="st">"b is greater than a"</span>)</span>
+<span id="cb31-5"><a href="#cb31-5"></a><span class="cf">elif</span> a <span class="op">==</span> b:</span>
+<span id="cb31-6"><a href="#cb31-6"></a>    <span class="bu">print</span>(<span class="st">"a and b are equal"</span>)</span>
+<span id="cb31-7"><a href="#cb31-7"></a><span class="cf">else</span>:</span>
+<span id="cb31-8"><a href="#cb31-8"></a>    <span class="bu">print</span>(<span class="st">"b is less than a"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>a and b are equal</code></pre>
 </div>
@@ -892,16 +1018,16 @@ b is &lt;class 'str'&gt;</code></pre>
 <section id="control-flow-statements-3" class="slide level2">
 <h2>Control Flow Statements</h2>
 <h3 id="for-loop"><code>for</code> loop</h3>
-<div id="17540533" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
-<span id="cb25-2"><a href="#cb25-2"></a><span class="cf">for</span> x <span class="kw">in</span> numbers:</span>
-<span id="cb25-3"><a href="#cb25-3"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">1</span>:</span>
-<span id="cb25-4"><a href="#cb25-4"></a>        <span class="cf">continue</span></span>
-<span id="cb25-5"><a href="#cb25-5"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">3</span>:</span>
-<span id="cb25-6"><a href="#cb25-6"></a>        <span class="cf">continue</span></span>
-<span id="cb25-7"><a href="#cb25-7"></a>    <span class="bu">print</span>(x)</span>
-<span id="cb25-8"><a href="#cb25-8"></a><span class="cf">else</span>:</span>
-<span id="cb25-9"><a href="#cb25-9"></a>    <span class="bu">print</span>(<span class="st">"loos is over"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="38902d15" class="cell" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
+<span id="cb33-2"><a href="#cb33-2"></a><span class="cf">for</span> x <span class="kw">in</span> numbers:</span>
+<span id="cb33-3"><a href="#cb33-3"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb33-4"><a href="#cb33-4"></a>        <span class="cf">continue</span></span>
+<span id="cb33-5"><a href="#cb33-5"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">3</span>:</span>
+<span id="cb33-6"><a href="#cb33-6"></a>        <span class="cf">continue</span></span>
+<span id="cb33-7"><a href="#cb33-7"></a>    <span class="bu">print</span>(x)</span>
+<span id="cb33-8"><a href="#cb33-8"></a><span class="cf">else</span>:</span>
+<span id="cb33-9"><a href="#cb33-9"></a>    <span class="bu">print</span>(<span class="st">"loos is over"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>2
 4
@@ -909,18 +1035,87 @@ loos is over</code></pre>
 </div>
 </div>
 <p>with <code>break</code>:</p>
-<div id="8dcd7f77" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
-<span id="cb27-2"><a href="#cb27-2"></a><span class="cf">for</span> x <span class="kw">in</span> numbers:</span>
-<span id="cb27-3"><a href="#cb27-3"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">2</span>:</span>
-<span id="cb27-4"><a href="#cb27-4"></a>      <span class="cf">break</span></span>
-<span id="cb27-5"><a href="#cb27-5"></a>    <span class="bu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div id="cc8f8509" class="cell" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>]</span>
+<span id="cb35-2"><a href="#cb35-2"></a><span class="cf">for</span> x <span class="kw">in</span> numbers:</span>
+<span id="cb35-3"><a href="#cb35-3"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">2</span>:</span>
+<span id="cb35-4"><a href="#cb35-4"></a>      <span class="cf">break</span></span>
+<span id="cb35-5"><a href="#cb35-5"></a>    <span class="bu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>1</code></pre>
 </div>
 </div>
-
-<img src="UEF musta logo engl pysty.jpg" class="slide-logo r-stretch"><div class="footer footer-default">
+</section>
+<section id="control-flow-statements-4" class="slide level2">
+<h2>Control Flow Statements</h2>
+<h3 id="while-loop"><code>while</code> loop</h3>
+<ul>
+<li>Endless execute a set of statements as long as a condition is true.</li>
+</ul>
+<div class="sourceCode" id="cb37"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1"></a>i <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb37-2"><a href="#cb37-2"></a><span class="cf">while</span> i <span class="op">&lt;</span> <span class="dv">6</span>:</span>
+<span id="cb37-3"><a href="#cb37-3"></a>  <span class="bu">print</span>(i)</span>
+<span id="cb37-4"><a href="#cb37-4"></a>  i <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>can also work with <code>break</code> and <code>continue</code></li>
+</ul>
+<div id="d3f5a65f" class="cell" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1"></a><span class="co"># here 5 is omitted</span></span>
+<span id="cb38-2"><a href="#cb38-2"></a>i <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb38-3"><a href="#cb38-3"></a><span class="cf">while</span> i <span class="op">&lt;</span> <span class="dv">6</span>:</span>
+<span id="cb38-4"><a href="#cb38-4"></a>    i <span class="op">=</span> i <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb38-5"><a href="#cb38-5"></a>    <span class="cf">if</span> i <span class="op">==</span> <span class="dv">3</span>:</span>
+<span id="cb38-6"><a href="#cb38-6"></a>        <span class="cf">continue</span></span>
+<span id="cb38-7"><a href="#cb38-7"></a>    <span class="cf">if</span> i <span class="op">==</span> <span class="dv">4</span>:</span>
+<span id="cb38-8"><a href="#cb38-8"></a>        <span class="cf">break</span></span>
+<span id="cb38-9"><a href="#cb38-9"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>1
+2</code></pre>
+</div>
+</div>
+</section>
+<section id="function" class="slide level2">
+<h2>Function</h2>
+<h3 id="define-and-call-function">Define and call function</h3>
+<ul>
+<li>The keyword <code>def</code> is used to define function</li>
+</ul>
+<div class="sourceCode" id="cb40"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1"></a><span class="kw">def</span> say_hello():</span>
+<span id="cb40-2"><a href="#cb40-2"></a>    <span class="bu">print</span>(<span class="st">"hello world!!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<ul>
+<li>Use the function name to call</li>
+</ul>
+<div id="bf5fe13e" class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1"></a><span class="co"># define a function</span></span>
+<span id="cb41-2"><a href="#cb41-2"></a><span class="kw">def</span> say_hello():</span>
+<span id="cb41-3"><a href="#cb41-3"></a>    <span class="bu">print</span>(<span class="st">"hello world!!"</span>)</span>
+<span id="cb41-4"><a href="#cb41-4"></a></span>
+<span id="cb41-5"><a href="#cb41-5"></a><span class="co"># call the function</span></span>
+<span id="cb41-6"><a href="#cb41-6"></a>say_hello()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>hello world!!</code></pre>
+</div>
+</div>
+<ul>
+<li>pass parameter</li>
+</ul>
+<div id="953d2074" class="cell" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1"></a><span class="kw">def</span> say_hello(name):</span>
+<span id="cb43-2"><a href="#cb43-2"></a>    <span class="bu">print</span>(name<span class="op">+</span><span class="st">" hello world!!"</span>)</span>
+<span id="cb43-3"><a href="#cb43-3"></a>    </span>
+<span id="cb43-4"><a href="#cb43-4"></a>say_hello(<span class="st">"Teemo"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Teemo hello world!!</code></pre>
+</div>
+</div>
+</section>
+<section id="usefull-modeles" class="slide level2">
+<h2>Usefull modeles</h2>
+<h3 id="numpy">Numpy</h3>
+<p><img data-src="Numpy_logo.png" class="absolute" style="top: 20px; right: 15px; width: 100px; "></p>
+<p><img src="UEF musta logo engl pysty.jpg" class="slide-logo"></p>
+<div class="footer footer-default">
 
 </div>
 </section>
