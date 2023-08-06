@@ -15,7 +15,7 @@ format:
         height: 900
         width: 1350
         slide-number: true
-        preview-links: auto
+        preview-links: true
         chalkboard:
           buttons: true
         logo: "UEF musta logo engl pysty.jpg"
@@ -454,7 +454,7 @@ else:
 
 - `for` loop
 - `while` loop
-- Both `for` and `while` loops can be liked to:
+- Both `for` and `while` loops can be linked to:
     - `break` statement
         - stop the loop before it has looped through all the items
     - `continue` statement
@@ -551,13 +551,464 @@ def say_hello(name):
 say_hello("Teemo")
 ```
 
-## Usefull modeles
+## Usefull modules
 ### Numpy 
-
-
 
 ![](Numpy_logo.png){.absolute top=20 right=15 width="100"}
 
+**Numpy** is an important module for scientific calculation
+
+::: columns
+::: {.column width="50%"}
+- In `conda`
+
+```shell
+conda install numpy
+```
+
+- In `pip`
+
+```shell
+pip install numpy
+```
+
+- import `numpy` module
+
+```python
+import numpy as np
+```
+:::
+
+::: {.column width="50%"}
+- Help you for saving time
+
+from:
+```c
+for (i = 0; i < rows; i++) {
+  for (j = 0; j < columns; j++) {
+    c[i][j] = a[i][j]*b[i][j];
+  }
+}
+```
+
+to:
+
+```matlab
+c = a * b
+```
+:::
+:::
+
+## Usefull modules
+### Numpy 
+
+- Creating arrays
+
+```python
+import numpy as np
+
+# 1-dimensional array
+arr1d = np.array([1, 2, 3, 4, 5])
+
+# 2-dimensional array
+arr2d = np.array([[1, 2, 3], [4, 5, 6]])
+
+```
+
+- Array shape and dimensions
+
+```python
+import numpy as np
+
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+
+print(arr.shape)  # (2, 3)
+print(arr.ndim)   # 2
+```
+
+## Usefull modules {.smaller}
+### Numpy
+
+::: columns
+::: {.column width="50%"}
+```python
+import numpy as np
+
+# Create a 1-dimensional NumPy array
+arr1d = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+# Slicing: Get elements from index 2 to 5 (exclusive)
+sliced_arr1d = arr1d[2:5]
+print(sliced_arr1d)  # Output: [2 3 4]
+
+# Slicing: Get all elements from index 4 to the end
+sliced_arr1d = arr1d[4:]
+print(sliced_arr1d)  # Output: [4 5 6 7 8 9]
+
+# Slicing: Get elements up to index 3 (exclusive)
+sliced_arr1d = arr1d[:3]
+print(sliced_arr1d)  # Output: [0 1 2]
+
+# Slicing: Get elements from 
+# index -5 (5th element from the end) to the end
+sliced_arr1d = arr1d[-5:]
+print(sliced_arr1d)  # Output: [5 6 7 8 9]
+
+```
+:::
+
+::: {.column width="50%"}
+```python
+# Create a 2-dimensional NumPy array
+arr2d = np.array([[0, 1, 2], [3, 4, 5], [6, 7, 8]])
+
+# Slicing: Get the first two rows
+sliced_arr2d = arr2d[:2, :]
+print(sliced_arr2d)
+# Output:
+# [[0 1 2]
+#  [3 4 5]]
+
+# Slicing: Get the last two columns
+sliced_arr2d = arr2d[:, -2:]
+print(sliced_arr2d)
+# Output:
+# [[1 2]
+#  [4 5]
+#  [7 8]]
+
+# Slicing: Get a sub-matrix from the original array
+sliced_arr2d = arr2d[1:, 1:]
+print(sliced_arr2d)
+# Output:
+# [[4 5]
+#  [7 8]]
+```
+:::
+:::
+
+## Usefull modules
+### Numpy 
+
+- Basic array operation
+
+```{python}
+#|echo: true
 
 
+import numpy as np
 
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+print(f"origin: \n {arr}")
+
+# Reshape the array to (3, 2)
+reshaped_arr = arr.reshape((3, 2))
+print(f"reshaped: \n  {reshaped_arr}")
+# Transpose the array
+transposed_arr = arr.T
+print(f"transposed: \n {transposed_arr}")
+
+```
+
+- More detail please read [Numpy document](https://numpy.org/doc/stable/user/index.html)
+
+## Usefull modeles {.smaller}
+### Scipy
+
+![](Sci_logo.png){.absolute top=20 right=15 width="100"}
+
+- to provide a wide range of scientific and technical computing capabilities in Python.
+
+For example:
+
+- Interpolation
+
+```{python}
+#| echo: true
+#| code-fold: true
+
+import numpy as np
+import plotly.graph_objects as go
+from scipy import interpolate
+
+# Sample data points
+x = np.array([1, 2, 3, 4, 5])
+y = np.array([2, 4, 1, 6, 3])
+# Create an interpolation function
+interp_func = interpolate.interp1d(x, y, kind='linear')
+interp_func1 = interpolate.interp1d(x, y, kind='cubic')
+# Define points where we want to estimate values
+x_new = np.linspace(1, 5, num=100)  # Generate 100 points between 1 and 5
+# Perform linear & cubic interpolation to estimate 
+# y-values for new x-values
+y_new = interp_func(x_new)
+y_new1 = interp_func1(x_new)
+# Plot the original data and the interpolated values
+fig = go.Figure()
+fig.add_trace(go.Scatter(x = x,y = y,
+              mode='markers', name='Origibal data'))
+fig.add_trace(go.Scatter(x = x_new,y = y_new,
+              mode='lines', name='Linear interpolation'))
+fig.add_trace(go.Scatter(x = x_new,y = y_new1,
+              mode='lines', name='Cubic interpolation'))
+fig.show()
+```
+
+
+## Usefull modeles {.smaller}
+### Scipy
+
+- Curve fit
+
+```{python}
+#| echo: true
+#| code-fold: true
+
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.optimize import curve_fit
+
+# Sample data points
+x = np.array([1, 2, 3, 4, 5])
+y = np.array([2.1, 3.9, 7.1, 8.8, 12.3])
+
+# Define the function to fit (in this example, we'll use a simple quadratic function)
+def quadratic_func(x, a, b, c):
+    return a * x**2 + b * x + c
+
+# Perform curve fitting
+params, cov_matrix = curve_fit(quadratic_func, x, y)
+
+# Get the fitted parameters
+a_fit, b_fit, c_fit = params
+
+# Generate new x values for plotting the fitted curve
+new_x = np.linspace(1, 5, 100)
+
+# Calculate the y values for the fitted curve
+fitted_y = quadratic_func(new_x, a_fit, b_fit, c_fit)
+
+trace_data = go.Scatter(x=x, y=y, mode='markers', name='Original Data')
+
+# Create the trace for the fitted curve
+trace_fit = go.Scatter(x=new_x, y=fitted_y, mode='lines', name='Fitted Curve')
+
+# Create the layout for the plot
+layout = go.Layout(title='Curve Fitting with Scipy', xaxis=dict(title='x'), yaxis=dict(title='y'))
+
+# Create the figure
+fig = go.Figure(data=[trace_data, trace_fit], layout=layout)
+
+# Show the figure
+fig.show()
+```
+
+## Usefull modeles {.smaller}
+### Pandas
+
+![](pandas_mark.png){.absolute top=20 right=15 width="100"}
+
+-  to provide a powerful library for data manipulation, cleaning, exploration, and analysis
+
+For example:
+
+- Read data from from multi-sources
+
+| Data Source       | Pandas Function              | Example                      |
+|-------------------|------------------------------|------------------------------|
+| CSV               | `pd.read_csv()`              | `pd.read_csv('data.csv')`    |
+| TXT               | `pd.read_csv()`              | `pd.read_csv('data.txt', delimiter='\t')` |
+| DAT               | `pd.read_csv()`              | `pd.read_csv('data.dat', delimiter=' ')`  |
+| Excel             | `pd.read_excel()`            | `pd.read_excel('data.xlsx')`  |
+| JSON              | `pd.read_json()`             | `pd.read_json('data.json')`   |
+| SQL Database      | `pd.read_sql()`              | `pd.read_sql('SELECT * FROM table_name', connection)`  |
+| Clipboard         | `pd.read_clipboard()`        | `pd.read_clipboard()`         |
+| URL               | `pd.read_csv()`              | `pd.read_csv('https://example.com/data.csv')`  |
+| HTML              | `pd.read_html()`             | `pd.read_html('https://example.com/table.html')` |
+
+## Usefull modeles
+### Pandas
+- Pandas VS. Build-in IO
+
+::: {.panel-tabset}
+### Pandas
+
+```python
+import pandas as pd
+
+# Read data.txt using Pandas
+df = pd.read_csv('data.txt')
+```
+
+### IO
+
+```python
+with open('data.txt', 'r') as file:
+    # Skip the header line
+    next(file)
+    # Initialize an empty list to store data
+    data = []
+    # Read and process each line in the file
+    for line in file:
+        line = line.strip()  # Remove leading/trailing whitespaces
+        col1, col2, col3 = line.split(',')  # Split the line using comma as the delimiter
+        data.append({'col1': col1, 'col2': col2, 'col3': col3})
+
+# Create a DataFrame from the data list
+df = pd.DataFrame(data)
+```
+
+:::
+
+## Usefull modeles {.smaller}
+### Pandas
+
+- Basic data exploration
+```python
+print(df.head())     # View the first few rows
+print(df.info())     # Summary of DataFrame information
+print(df.describe()) # Summary statistics
+print(df.shape)      # Number of rows and columns
+```
+
+- Filtering
+```python
+df[df['col1'] > 0] # keep all rows based on col1 > 0
+```
+
+- Groping and aggregation
+```{python}
+#| echo: true
+
+import pandas as pd
+
+data = {
+        'Name': ['1', '1', '1','0','0','0'],
+        'Value': [25, 30, 22,12,32,55]
+}
+
+df = pd.DataFrame(data)
+grouped_df = df.groupby('Name').mean()
+print(grouped_df)
+```
+
+
+## Usefull modeles {.smaller}
+### Pandas
+
+- Handling Missing Data:
+
+```python
+ # Drop rows with missing values
+f.dropna()
+# Fill missing values with a specific value (e.g., 0)
+df.fillna(0)
+# Forward fill missing values with the previous value
+df.fillna(method='ffill')
+```
+
+- Mergeing data
+
+```{python}
+#| echo: true
+
+
+df1 = pd.DataFrame({'ID': [1, 2, 3], 
+                    'Name': ['Alice', 'Bob', 'Charlie']})
+df2 = pd.DataFrame({'ID': [2, 3, 4], 
+                    'City': ['New York', 'Los Angeles', 'Chicago']})
+
+merged_df = pd.merge(df1, df2, on='ID')
+merged_df
+```
+
+::: footer
+Learn more: [Pandas](https://pandas.pydata.org/docs/)
+:::
+
+## Usefull modeles {.smaller}
+### GeoPandas
+
+to provide a convenient and efficient way to work with geospatial data in Python
+- Load *.shp file
+
+```{python}
+#| echo: true
+#| code-fold: true
+
+
+import geopandas as gpd
+import matplotlib.pyplot as plt
+# Load a shapefile into a GeoDataFrame
+gdf = gpd.read_file('krycklan\\5haStreams.shp').to_crs("epsg:4326")
+
+# Display the first few rows of the GeoDataFrame
+print(gdf.head())
+```
+
+## Usefull modeles {.smaller}
+### GeoPandas
+- Plot
+
+```{python}
+#| echo: true
+#| code-fold: true
+
+import geopandas as gpd
+
+gdf = gpd.read_file('krycklan\\5haStreams.shp').to_crs("epsg:4326")
+gdf.explore()
+
+``` 
+
+## Usefull modeles {.smaller}
+### GeoPandas
+
+| Function/Method           | Description                                                                                                     |
+|--------------------------|------------------------------------------------------------------------------------------------------|
+| `gpd.read_file()`        | Load geospatial data from file (e.g., shapefile, GeoJSON, GeoPackage).                                |
+| `GeoDataFrame()`         | Create a GeoDataFrame from a DataFrame with geometry column or other geospatial data.         |
+| `gdf.head()`             | Display the first few rows of the GeoDataFrame.                                                  |
+| `gdf.plot()`             | Plot the GeoDataFrame using Matplotlib.                                                                  |
+| `gdf.geometry`           | Access the geometry column of the GeoDataFrame.                                                    |
+| `gdf.crs`                | Get or set the coordinate reference system (CRS) of the GeoDataFrame.                          |
+| `gdf.to_crs()`           | Reproject (transform) the GeoDataFrame to a new CRS.                                               |
+| `gdf.bounds`             | Calculate the bounding box of the GeoDataFrame.                                                     |
+| `gdf.buffer()`           | Create a buffer around the geometries in the GeoDataFrame.                                          |
+| `gdf.intersection()`     | Perform spatial intersection between two GeoDataFrames.                                           |
+| `gdf.dissolve()`         | Merge geometries based on a common attribute value.                                                 |
+| `gpd.overlay()`          | Perform spatial overlay operations (intersection, union, difference, etc.) between GeoDataFrames. |
+| `gdf.cx[]`               | Spatial filtering based on a bounding box.                                                           |
+
+
+## Usefull modeles {.smaller}
+### GeoPandas
+| Function/Method           | Description                                                                                                     |
+|--------------------------|------------------------------------------------------------------------------------------------------|
+| `gdf.intersects()`       | Check if geometries intersect with a specific geometry.                                              |
+| `gpd.sjoin()`            | Perform a spatial join between two GeoDataFrames based on their spatial relationship.         |
+| `gdf.area`               | Calculate the area of geometries in the GeoDataFrame.                                                  |
+| `gdf.length`             | Calculate the length of geometries (lines) in the GeoDataFrame.                                     |
+| `gdf.centroid`          | Get the centroid point of geometries in the GeoDataFrame.                                          |
+| `gdf.to_file()`          | Save the GeoDataFrame to a file (e.g., shapefile, GeoJSON, GeoPackage).                          |
+
+
+## Some usefull tutorials
+
+
+| Library      | Official Documentation                                      |
+|--------------|------------------------------------------------------------|
+| NumPy        | https://numpy.org/doc/                                     |
+| SciPy        | https://docs.scipy.org/doc/scipy/reference/                |
+| Pandas       | https://pandas.pydata.org/docs/                            |
+| GeoPandas    | https://geopandas.org/en/stable/                           |
+| Matplotlib   | https://matplotlib.org/stable/                             |
+
+## 
+
+<br/>
+<br/>
+
+::: {.r-fit-text}
+  Thanks 😊
+:::
