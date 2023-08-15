@@ -6,23 +6,21 @@ author:
     affiliations:
         name: University of Eastern Finland
         cicy: Joensuu
-        
     email: liangch@uef.fi
     orcid: 0000-0002-1811-5717
 date: "2023-08-08"
 format: 
     revealjs:
+        embed-resources: true
         height: 900
         width: 1350
         slide-number: true
         preview-links: true
-        chalkboard:
-          buttons: true
         logo: "UEF musta logo engl pysty.jpg"
         theme: simple
         menu:
           width: wide
-          
+
 title-slide-attributes:
     data-background-image: "TittleLogo.png"
     data-background-size: 50%
@@ -31,6 +29,7 @@ title-slide-attributes:
 engine: jupyter
 jupyter: python3
 keep-ipynb: true
+
 ---
 
 ## Table of Contents
@@ -1012,3 +1011,10 @@ gdf.explore()
 ::: {.r-fit-text}
   Thanks 😊
 :::
+
+<br/>
+
+material can be found in [my github](https://github.com/LiangChen3519/SummerSchoolUEF_2023)
+
+
+liangch@uef.fi
